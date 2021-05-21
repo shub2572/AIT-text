@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AIT TEXT SHOWING</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+
+<style>
+p {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+    <body style="background-color:powderblue;">    <h1 style="text-align: center;">Name:- Shubham Mistry |ER:- 180020107028</h1>
+    <p id="demo"></p>
+<h3>Write javascript code that displays the text”AHMEDABAD INSTITUTE OF
+    TECHNOLOGY” with increasing font size in interval of 50ms in green color.when font size
+    reaches to 50px it should stop.
+</h3>
+  
+<script>
+var var1 = setInterval(time, 1000);
+var fs = 5;
+var a = document.getElementById("demo");
+function time() {
+a.innerHTML = 'AHMEDABAD INSTITUTE OF TECHNOLOGY';
+a.setAttribute('style', "font-size: " + fs + "px; color: green");
+fs += 5;
+if(fs >= 55 ){
+clearInterval(var1);
+}
+}
+ 
+</script>
+</body>
+</html>
